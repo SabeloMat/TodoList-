@@ -14,10 +14,17 @@
         <div id="todo-list"></div>
         <div id="add-todo">
             <input type="text" id="new-todo" placeholder="Add a new ToDo">
-            <button >Add</button>
+            <button onclick="addTodo(todos)">Add</button>
         </div>
     </div>
-<script src="js/todo.js">
+<script src="js/todo.js"></script>
+<script>
+let todos = [
+    { text: 'Learn HTML', completed: false },
+    { text: 'Learn CSS', completed: true },
+    { text: 'Learn JavaScript', completed: false }
+];
+renderTodos(todos)
 </script>
 </body>
 </html>
